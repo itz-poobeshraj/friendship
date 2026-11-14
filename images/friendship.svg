@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEBF3"/>
+      <stop offset="50%" stop-color="#F5EEFF"/>
+      <stop offset="100%" stop-color="#E1EEFF"/>
+    </linearGradient>
+    <linearGradient id="boyShirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4FACFE"/>
+      <stop offset="100%" stop-color="#00C9FF"/>
+    </linearGradient>
+    <linearGradient id="girlSweater" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B8B"/>
+      <stop offset="100%" stop-color="#FFA07A"/>
+    </linearGradient>
+    <linearGradient id="goldRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9E6"/>
+      <stop offset="100%" stop-color="#FFF0F5"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" rx="36" fill="url(#bgGrad)"/>
+
+  <!-- Halo Circle -->
+  <circle cx="400" cy="400" r="280" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="400" cy="400" r="260" fill="#FFFDFE" stroke="#FFD1DC" stroke-width="3"/>
+
+  <!-- Ambient Floating Stars & Sparkles -->
+  <g fill="#FEE140" opacity="0.85">
+    <path d="M 180 160 Q 180 180 160 180 Q 180 180 180 200 Q 180 180 200 180 Q 180 180 180 160 Z" />
+    <path d="M 640 180 Q 640 195 625 195 Q 640 195 640 210 Q 640 195 655 195 Q 640 195 640 180 Z" />
+    <path d="M 220 420 Q 220 435 205 435 Q 220 435 220 450 Q 220 435 235 435 Q 220 435 220 420 Z" />
+    <path d="M 600 400 Q 600 415 585 415 Q 600 415 600 430 Q 600 415 615 415 Q 600 415 600 400 Z" />
+    <path d="M 400 150 Q 400 168 382 168 Q 400 168 400 186 Q 400 168 418 168 Q 400 168 400 150 Z" />
+  </g>
+
+  <!-- Floating Hearts -->
+  <g fill="#FF6B8B" opacity="0.75">
+    <path d="M 230 270 C 230 250, 200 250, 200 275 C 200 295, 230 315, 230 315 C 230 315, 260 295, 260 275 C 260 250, 230 250, 230 270 Z" transform="scale(0.8) translate(50, 20)"/>
+    <path d="M 570 260 C 570 240, 540 240, 540 265 C 540 285, 570 305, 570 305 C 570 305, 600 285, 600 265 C 600 240, 570 240, 570 260 Z" transform="scale(0.8) translate(120, 30)"/>
+  </g>
+
+  <!-- Floating Balloons -->
+  <g>
+    <!-- Pink Balloon -->
+    <path d="M 200 210 C 170 210, 160 250, 160 270 C 160 300, 185 330, 200 335 C 215 330, 240 300, 240 270 C 240 250, 230 210, 200 210 Z" fill="#FF6B8B"/>
+    <path d="M 200 335 L 195 342 L 205 342 Z" fill="#FF6B8B"/>
+    <path d="M 200 342 Q 190 380 205 420" stroke="#B0A0C0" stroke-width="2" fill="none"/>
+
+    <!-- Lavender Balloon -->
+    <path d="M 600 210 C 570 210, 560 250, 560 270 C 560 300, 585 330, 600 335 C 615 330, 640 300, 640 270 C 640 250, 630 210, 600 210 Z" fill="#A18CD1"/>
+    <path d="M 600 335 L 595 342 L 605 342 Z" fill="#A18CD1"/>
+    <path d="M 600 342 Q 610 380 595 420" stroke="#B0A0C0" stroke-width="2" fill="none"/>
+
+    <!-- Sunshine Yellow Balloon -->
+    <path d="M 270 150 C 245 150, 235 185, 235 200 C 235 225, 255 250, 270 255 C 285 250, 305 225, 305 200 C 305 185, 295 150, 270 150 Z" fill="#FEE140"/>
+    <path d="M 270 255 L 265 261 L 275 261 Z" fill="#FEE140"/>
+    <path d="M 270 261 Q 280 300 265 350" stroke="#B0A0C0" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Bench Platform -->
+  <rect x="230" y="565" width="340" height="14" rx="7" fill="#8C6D58"/>
+  <rect x="260" y="579" width="10" height="90" rx="3" fill="#6A4E3D"/>
+  <rect x="530" y="579" width="10" height="90" rx="3" fill="#6A4E3D"/>
+
+  <!-- ==================== BOY (LEFT BEST FRIEND) ==================== -->
+  <g id="boy">
+    <!-- Legs -->
+    <rect x="305" y="560" width="24" height="85" rx="10" fill="#4A5568"/>
+    <rect x="338" y="560" width="24" height="85" rx="10" fill="#4A5568"/>
+    <!-- Shoes -->
+    <ellipse cx="317" cy="650" rx="16" ry="9" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <ellipse cx="350" cy="650" rx="16" ry="9" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+
+    <!-- Hoodie Body -->
+    <path d="M 295 440 C 295 420, 375 420, 375 440 L 375 565 L 295 565 Z" fill="url(#boyShirt)"/>
+
+    <!-- Left Arm Resting -->
+    <path d="M 298 445 C 275 480, 280 530, 295 550" stroke="url(#boyShirt)" stroke-width="20" stroke-linecap="round" fill="none"/>
+    <circle cx="295" cy="550" r="10" fill="#FDDCB5"/>
+
+    <!-- Neck -->
+    <rect x="323" y="415" width="24" height="20" rx="5" fill="#FDDCB5"/>
+
+    <!-- Head & Face -->
+    <ellipse cx="335" cy="375" rx="34" ry="40" fill="#FDDCB5"/>
+
+    <!-- Hair -->
+    <path d="M 300 370 C 298 330, 370 330, 370 370 C 370 340, 340 335, 320 340 C 305 345, 300 360, 300 370 Z" fill="#4A3427"/>
+    <path d="M 305 350 Q 330 330 365 350 Q 335 340 305 350 Z" fill="#3D291D"/>
+
+    <!-- Face Details -->
+    <circle cx="323" cy="375" r="3.5" fill="#2D3748"/>
+    <circle cx="347" cy="375" r="3.5" fill="#2D3748"/>
+    <path d="M 326 388 Q 335 398 344 388" stroke="#E53E3E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Cheerful Eyebrows -->
+    <path d="M 318 366 Q 324 362 329 366" stroke="#4A3427" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 341 366 Q 346 362 352 366" stroke="#4A3427" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- High-Five Right Arm -->
+    <path d="M 365 445 Q 390 415 400 385" stroke="url(#boyShirt)" stroke-width="20" stroke-linecap="round" fill="none"/>
+    <circle cx="400" cy="385" r="11" fill="#FDDCB5"/>
+  </g>
+
+  <!-- ==================== GIRL (RIGHT BEST FRIEND) ==================== -->
+  <g id="girl">
+    <!-- Legs -->
+    <rect x="438" y="560" width="22" height="85" rx="10" fill="#EDF2F7"/>
+    <rect x="470" y="560" width="22" height="85" rx="10" fill="#EDF2F7"/>
+    <!-- Shoes -->
+    <ellipse cx="449" cy="650" rx="15" ry="9" fill="#FF6B8B"/>
+    <ellipse cx="481" cy="650" rx="15" ry="9" fill="#FF6B8B"/>
+
+    <!-- Sweater Body -->
+    <path d="M 425 440 C 425 420, 505 420, 505 440 L 505 565 L 425 565 Z" fill="url(#girlSweater)"/>
+
+    <!-- Right Arm Resting -->
+    <path d="M 502 445 C 525 480, 520 530, 505 550" stroke="url(#girlSweater)" stroke-width="19" stroke-linecap="round" fill="none"/>
+    <circle cx="505" cy="550" r="10" fill="#FDDCB5"/>
+
+    <!-- Long Hair Back -->
+    <path d="M 420 370 C 410 440, 420 480, 440 500 C 470 500, 510 490, 515 470 C 520 440, 525 370, 515 350 Z" fill="#6B4423"/>
+
+    <!-- Neck -->
+    <rect x="453" y="415" width="24" height="20" rx="5" fill="#FDDCB5"/>
+
+    <!-- Head & Face -->
+    <ellipse cx="465" cy="375" rx="34" ry="40" fill="#FDDCB5"/>
+
+    <!-- Hair Bangs Front -->
+    <path d="M 432 360 C 435 330, 495 330, 498 360 C 485 348, 470 348, 465 355 C 455 348, 442 348, 432 360 Z" fill="#583416"/>
+
+    <!-- Face Details -->
+    <circle cx="453" cy="375" r="3.5" fill="#2D3748"/>
+    <circle cx="477" cy="375" r="3.5" fill="#2D3748"/>
+    <path d="M 456 388 Q 465 398 474 388" stroke="#E53E3E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Cheeks Blush -->
+    <ellipse cx="445" cy="383" rx="7" ry="4" fill="#FF8E9E" opacity="0.6"/>
+    <ellipse cx="485" cy="383" rx="7" ry="4" fill="#FF8E9E" opacity="0.6"/>
+    <!-- Cute Eyebrows -->
+    <path d="M 448 366 Q 453 362 458 366" stroke="#583416" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 472 366 Q 477 362 482 366" stroke="#583416" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- High-Five Left Arm -->
+    <path d="M 435 445 Q 410 415 400 385" stroke="url(#girlSweater)" stroke-width="19" stroke-linecap="round" fill="none"/>
+    <circle cx="400" cy="385" r="11" fill="#FDDCB5"/>
+  </g>
+
+  <!-- Big Glowing Heart between high-fiving hands -->
+  <g filter="url(#softGlow)">
+    <path d="M 400 345 C 400 330, 380 330, 380 348 C 380 365, 400 380, 400 380 C 400 380, 420 365, 420 348 C 420 330, 400 330, 400 345 Z" fill="#FF3366"/>
+  </g>
+  <path d="M 400 345 C 400 330, 380 330, 380 348 C 380 365, 400 380, 400 380 C 400 380, 420 365, 420 348 C 420 330, 400 330, 400 345 Z" fill="#FF4B72"/>
+  <!-- Sparkle on heart -->
+  <polygon points="400,320 404,328 412,328 406,334 408,342 400,337 392,342 394,334 388,328 396,328" fill="#FFF8E7"/>
+
+  <!-- Bottom Friendship Banner Ribbon -->
+  <g transform="translate(160, 690)">
+    <rect x="0" y="0" width="480" height="64" rx="32" fill="url(#goldRibbon)" stroke="#FFB6C1" stroke-width="3" filter="url(#softGlow)"/>
+    <rect x="0" y="0" width="480" height="64" rx="32" fill="url(#goldRibbon)" stroke="#FFA07A" stroke-width="2"/>
+    <text x="240" y="42" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" fill="#E11D48" text-anchor="middle" letter-spacing="1">
+      BEST FRIENDS FOREVER ♡
+    </text>
+  </g>
+</svg>
+

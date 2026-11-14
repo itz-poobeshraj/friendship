@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Beautiful Friendship – Happy Birthday!</title>
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Ambient Particle & Sparkle Canvas -->
+    <canvas id="ambientParticleCanvas"></canvas>
+
+    <!-- =========================================================================
+         STAGE 1 – LOGIN PAGE
+         ========================================================================= -->
+    <main class="stage-login-container" id="stage1-login">
+        <div class="login-card">
+            <!-- Left: Friendship Illustration -->
+            <div class="login-visual-panel">
+                <img src="images/friendship.png" alt="Boy and girl best friends celebrating friendship"
+                    class="friendship-hero-img">
+                <div class="visual-quote">“Best Friends Forever ♡”</div>
+                <p class="visual-caption">A special birthday surprise made with all my heart</p>
+            </div>
+
+            <!-- Right: Login Form -->
+            <div class="login-form-panel">
+                <div class="login-header-group">
+                    <span class="badge-tag">🔒 Private Birthday Surprise</span>
+                    <h1 class="login-title">Hello, <span class="gradient-text inject-friend-name">Sorna</span>! ✨</h1>
+                    <p class="login-subtitle">Enter your name and your special date to unlock your birthday surprise.
+                    </p>
+                </div>
+
+                <form id="loginForm" novalidate>
+                    <!-- Username Field -->
+                    <div class="form-group">
+                        <label for="loginUsername" class="form-label">Friend's Name</label>
+                        <div class="input-with-icon">
+                            <input type="text" id="loginUsername" class="input-field" placeholder="Enter your name"
+                                required autocomplete="off">
+                        </div>
+                    </div>
+
+                    <!-- Password Field (Friend's DOB in DDMMYYYY format) -->
+                    <div class="form-group">
+                        <label for="loginPassword" class="form-label">Password (Date of Birth: DDMMYYYY)</label>
+                        <div class="input-with-icon">
+                            <input type="password" id="loginPassword" class="input-field"
+                                placeholder="DDMMYYYY (e.g. 15112005)" required autocomplete="off">
+                            <button type="button" class="input-toggle-btn" id="togglePasswordBtn"
+                                aria-label="Show password">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Friendly Error Alert Container -->
+                    <div class="form-error-msg" id="loginError" role="alert">
+                        Oops! That's not quite right. Make sure your name and birthday (DDMMYYYY) are correct! ♡
+                    </div>
+
+                    <!-- Unlock Button -->
+                    <button type="submit" class="btn-unlock" id="loginSubmitBtn">
+                        <span>Unlock Your Surprise ♡</span>
+                    </button>
+
+                    <!-- Hint / Prefill for Instant Testing -->
+                    <div class="login-hint-row">
+                        <span>💡 Hint: sornakaa &amp; 15112005</span>
+                        <button type="button" class="btn-prefill" id="prefillCredentialsBtn"
+                            title="Fill default credentials">Auto-fill</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- =========================================================================
+         MAIN JOURNEY (Stages 2 to 6)
+         ========================================================================= -->
+    <div class="main-journey-container" id="mainJourney">
+
+        <!-- =====================================================================
+             STAGE 2 – BIRTHDAY WELCOME PAGE
+             ===================================================================== -->
+        <section class="journey-section welcome-stage" id="stage2-welcome">
+            <!-- Floating Balloons Cluster -->
+            <div class="balloon-cluster">
+                <div class="balloon balloon-pink"><span class="string"></span></div>
+                <div class="balloon balloon-lavender"><span class="string"></span></div>
+                <div class="balloon balloon-blue"><span class="string"></span></div>
+                <div class="balloon balloon-yellow"><span class="string"></span></div>
+                <div class="balloon balloon-mint"><span class="string"></span></div>
+            </div>
+
+            <!-- Welcome Content Card -->
+            <div class="welcome-content-card">
+                <div class="birthday-badge-banner">
+                    <span>🎉</span> IT'S YOUR SPECIAL DAY! <span>🎂</span>
+                </div>
+                <h1 class="welcome-heading">
+                    Happy Birthday, <span class="gradient-text inject-friend-name">Bestie</span>! 🎂
+                </h1>
+                <p class="welcome-subtext" id="welcomeSubtitle">
+                    To the truest, craziest and most wonderful best friend in the world!
+                </p>
+
+                <!-- Short Birthday Wish -->
+                <div class="birthday-wish-box">
+                    <p class="birthday-wish-text" id="birthdayWishText">
+                        Wishing you a year filled with endless laughter, boundless happiness, wild adventures and dreams
+                        that all come true. Today is all about celebrating you and the irreplaceable joy you bring to my
+                        life every single day!
+                    </p>
+                </div>
+
+                <!-- Smooth Scroll to Stage 3 -->
+                <button class="btn-scroll-journey" id="scrollDownToStory">
+                    <span>Begin Our Friendship Journey</span>
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             STAGE 3 – A BEAUTIFUL BOND: THE STORY OF OUR FRIENDSHIP
+             ===================================================================== -->
+        <section class="journey-section" id="stage3-story">
+            <div class="section-header">
+                <span class="section-tag">• Storytelling</span>
+                <h2 class="section-title">A Beautiful Bond – The Story of Our Friendship ❤️</h2>
+            </div>
+
+            <!-- Opening Quote -->
+            <div class="story-quote-banner">
+                <p>“Some connections are unexpected, some are unplanned, but a few become the most beautiful chapters of
+                    our lives.”</p>
+            </div>
+
+            <!-- Six Storytelling Cards -->
+            <div class="story-timeline">
+                <!-- Paragraph 1 -->
+                <article class="story-card">
+                    <div class="story-card-top">
+                        <span class="story-chapter-badge badge-ch1">• The Beginning</span>
+                        <span class="story-motif-icon">🌱</span>
+                    </div>
+                    <p class="story-text">
+                        Some connections are unexpected, some are unplanned, but a few become the <span
+                            class="hl-pink">most beautiful chapters</span> of our lives. Friendship is one such
+                        connection that doesn't need a special reason to begin. Sometimes, two completely different
+                        people cross paths, start talking and slowly become an important part of each other's lives.
+                        Without even realizing it, a simple friendship becomes something truly special.
+                    </p>
+                </article>
+
+                <!-- Paragraph 2 -->
+                <article class="story-card">
+                    <div class="story-card-top">
+                        <span class="story-chapter-badge badge-ch2">• Beyond Definitions</span>
+                        <span class="story-motif-icon">✨</span>
+                    </div>
+                    <p class="story-text">
+                        A friendship between a boy and a girl is not about how others see it. It's about the <span
+                            class="hl-purple">trust, respect, care and understanding</span> they share. It's about
+                        having someone with whom you can be yourself, share your happiness, express your feelings and
+                        talk about absolutely anything. Sometimes, even a simple conversation with that person can turn
+                        an ordinary day into a beautiful one.
+                    </p>
+                </article>
+
+                <!-- Paragraph 3 -->
+                <article class="story-card">
+                    <div class="story-card-top">
+                        <span class="story-chapter-badge badge-ch3">• The Little Moments</span>
+                        <span class="story-motif-icon">🎉</span>
+                    </div>
+                    <p class="story-text">
+                        What makes this bond special are all the little moments we create together. The endless teasing,
+                        silly fights, random conversations, unexpected jokes and <span class="hl-pink">laughter for no
+                            reason</span> make every moment memorable. We may irritate each other, argue over silly
+                        things and sometimes disagree, but those little moments become some of the sweetest memories of
+                        friendship.
+                    </p>
+                </article>
+
+                <!-- Paragraph 4 -->
+                <article class="story-card">
+                    <div class="story-card-top">
+                        <span class="story-chapter-badge badge-ch4">• Silent Care &amp; Support</span>
+                        <span class="story-motif-icon">🛡️</span>
+                    </div>
+                    <p class="story-text">
+                        True friendship is also about being there for each other through different situations. It's
+                        about listening without judging, understanding without needing explanations and <span
+                            class="hl-blue">caring without expecting anything in return</span>. Sometimes, care is
+                        hidden behind a simple question, a little reminder or a random message asking whether everything
+                        is okay. These small actions often express more than words ever could.
+                    </p>
+                </article>
+
+                <!-- Paragraph 5 -->
+                <article class="story-card">
+                    <div class="story-card-top">
+                        <span class="story-chapter-badge badge-ch5">• Timeless Smiles</span>
+                        <span class="story-motif-icon">🌅</span>
+                    </div>
+                    <p class="story-text">
+                        As time passes, life changes, responsibilities increase and everyone follows their own journey.
+                        But the memories we create will always have a special place in our hearts. The random laughter,
+                        unforgettable conversations and little moments of happiness may seem ordinary today, but someday
+                        they will become the <span class="hl-purple">memories that bring the biggest smiles</span>.
+                    </p>
+                </article>
+
+                <!-- Paragraph 6 -->
+                <article class="story-card">
+                    <div class="story-card-top">
+                        <span class="story-chapter-badge badge-ch6">• Forever Cherished</span>
+                        <span class="story-motif-icon">💫</span>
+                    </div>
+                    <p class="story-text">
+                        Some bonds don't need perfect words or special definitions. They are built through <span
+                            class="hl-pink">trust, genuine care, mutual respect</span> and countless little memories. A
+                        boy, a girl, two different personalities, endless laughter and one beautiful friendship. Because
+                        some friendships are not just part of our lives; they become some of the most beautiful memories
+                        of our lives.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Closing Quote -->
+            <div class="story-quote-banner closing">
+                <p>“A boy, a girl, countless memories and one beautiful friendship.” ❤️</p>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             STAGE 4 – FRIENDSHIP PHOTO GALLERY
+             ===================================================================== -->
+        <section class="journey-section" id="stage4-gallery">
+            <div class="section-header">
+                <span class="section-tag">• Photo Gallery</span>
+                <h2 class="section-title">Every Picture Has a Story 📸</h2>
+                <p class="section-subtitle">“Some moments become memories, and some memories become forever.”</p>
+            </div>
+
+            <!-- 10 Responsive Photo Cards Grid (populated dynamically by js/gallery.js) -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Javascript injects exactly 10 photo cards here -->
+            </div>
+
+            <!-- Full-Size Lightbox Modal -->
+            <div class="gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true"
+                aria-label="Photo Lightbox">
+                <!-- Close Button -->
+                <button class="lightbox-btn lightbox-close-btn" id="lightboxClose"
+                    aria-label="Close Lightbox">×</button>
+                <!-- Prev Button -->
+                <button class="lightbox-btn lightbox-prev-btn" id="lightboxPrev" aria-label="Previous Photo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <!-- Next Button -->
+                <button class="lightbox-btn lightbox-next-btn" id="lightboxNext" aria-label="Next Photo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+
+                <div class="lightbox-content-wrapper">
+                    <div class="lightbox-img-container">
+                        <img src="" alt="" class="lightbox-img" id="lightboxImage">
+                    </div>
+                    <div class="lightbox-info-box">
+                        <span class="lightbox-counter" id="lightboxCounter">1 / 10</span>
+                        <h3 class="lightbox-title" id="lightboxTitle"></h3>
+                        <p class="lightbox-quote" id="lightboxQuote"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             STAGE 5 – SPECIAL VIDEO SECTION
+             ===================================================================== -->
+        <section class="journey-section" id="stage5-video">
+            <div class="section-header">
+                <span class="section-tag">• Personal Video</span>
+                <h2 class="section-title">A Little Collection of Our Memories ❤️</h2>
+            </div>
+
+            <div class="cinematic-frame-wrapper">
+                <!-- Decorative Corner Accents -->
+                <span class="frame-sparkle-decor decor-tl">✨</span>
+                <span class="frame-sparkle-decor decor-tr">💖</span>
+                <span class="frame-sparkle-decor decor-bl">🌸</span>
+                <span class="frame-sparkle-decor decor-br">⭐</span>
+
+                <!-- Cinematic Video Frame -->
+                <div class="cinematic-frame" id="cinematicFrame">
+                    <video id="friendshipVideo" class="friendship-video" playsinline preload="metadata"
+                        poster="images/video-poster.jpg">
+                        <source src="videos/friendship-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <!-- Fallback Animated Memory Canvas (runs if local mp4 is pending replacement) -->
+                    <canvas id="videoFallbackCanvas"></canvas>
+
+                    <!-- Big Center Play Button Overlay -->
+                    <button class="video-overlay-play" id="overlayPlayBtn" aria-label="Play video">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5,3 19,12 5,21"></polygon>
+                        </svg>
+                    </button>
+
+                    <!-- Custom Player Controls Bar -->
+                    <div class="video-controls-bar">
+                        <!-- Progress Scrubber -->
+                        <div class="video-progress-wrapper" id="videoProgressBar" role="slider"
+                            aria-label="Video progress scrubber" tabindex="0">
+                            <div class="video-progress-filled" id="videoProgressFilled"></div>
+                        </div>
+
+                        <!-- Controls Row -->
+                        <div class="video-controls-row">
+                            <div class="video-left-controls">
+                                <button class="video-btn" id="videoPlayBtn" aria-label="Play or pause">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="5,3 19,12 5,21"></polygon>
+                                    </svg>
+                                </button>
+                                <div class="video-volume-group">
+                                    <button class="video-btn" id="videoVolumeBtn" aria-label="Mute or unmute">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polygon points="11,5 6,9 2,9 2,15 6,15 11,19"></polygon>
+                                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <input type="range" class="video-volume-slider" id="videoVolumeSlider" min="0"
+                                        max="1" step="0.05" value="1" aria-label="Volume slider">
+                                </div>
+                                <span class="video-time-readout" id="videoTimeDisplay">0:00 / 0:00</span>
+                            </div>
+
+                            <div class="video-right-controls">
+                                <button class="video-btn" id="videoFullscreenBtn" aria-label="Toggle Fullscreen">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Caption -->
+            <div class="video-caption-container">
+                <p class="video-caption-text" id="videoCaptionText">
+                    “Every moment has a story, every memory has a feeling, and this little video holds some of our most
+                    beautiful moments together.”
+                </p>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             STAGE 6 – SECRET MESSAGE SECTION
+             ===================================================================== -->
+        <section class="journey-section" id="stage6-secret">
+            <div class="section-header">
+                <span class="section-tag">• Secret Message</span>
+                <h2 class="section-title">A Little Message From My Heart 💌</h2>
+            </div>
+
+            <div class="secret-envelope-wrapper" id="secretEnvelopeContainer">
+                <p class="envelope-prompt-text" id="envelopeHint">
+                    You have a little surprise waiting for you! Tap the envelope to open ♡
+                </p>
+
+                <!-- 3D Interactive Envelope -->
+                <div class="envelope-3d-box" id="interactiveEnvelope" tabindex="0" role="button"
+                    aria-label="Open secret birthday letter">
+                    <!-- Flap -->
+                    <div class="envelope-flap"></div>
+                    <!-- Wax Seal -->
+                    <div class="envelope-wax-seal" id="envelopeSeal">♡</div>
+                    <!-- Pocket Sides -->
+                    <div class="envelope-pocket-left"></div>
+                    <div class="envelope-pocket-right"></div>
+                    <div class="envelope-pocket-bottom"></div>
+
+                    <!-- Letter Paper Sheet (slides up & expands) -->
+                    <article class="letter-paper-sheet" id="letterPaper">
+                        <div class="letter-header-decor">
+                            <span class="letter-stamp">From the Heart of Your Best Friend ♡</span>
+                        </div>
+                        <div class="letter-body-area">
+                            <div class="letter-typed-content" id="letterTypedContent"></div>
+                            <span class="typing-cursor" id="typingCursor"></span>
+                        </div>
+                        <div class="letter-actions-row">
+                            <button type="button" class="btn-letter-action" id="letterSkipBtn">
+                                <span>Fast-forward text ⚡</span>
+                            </button>
+                            <button type="button" class="btn-letter-action" id="letterReplayBtn" style="display: none;">
+                                <span>Replay typing ↺</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             FOOTER
+             ===================================================================== -->
+        <footer class="site-footer">
+            <p class="footer-quote">“Among all the beautiful chapters of life, our friendship will always be one of my
+                favourites.”</p>
+            <p class="footer-sub">A Beautiful Friendship • Created with love🤍 and memories⭐ for your birthday ✨</p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts (Ordered cleanly) -->
+    <script src="js/config.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/envelope.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
