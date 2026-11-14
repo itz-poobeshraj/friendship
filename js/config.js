@@ -134,7 +134,7 @@ Apro sirappah.. 3 year iku vandom.. neraiya chat panni irukkom.. silly jokes... 
 
 Ena nu therila recent ahh konjam problem la vandhuruchu.. na frnd ahh mattum ta una paten oi.. vera endha oru intention um illa.. idha already na unta solli irukken.. ni enta one tym oru kelvi keta.. apaiyum ide ta sonnen.. ipavum soldren oi.. na 1st year la frnd aaganum nu nenacha person ni mah.. so apaila ila irundhu un frnd ahh ta pakkuren.. ipavum una frnd ahh ta pakkuren.. ine yum unna frnd ahh ta papen oi.. vera endha our thoughts um illa oi... 🤝🤍
 
-Enta ni oru nal namba game play pandra apo.. unakku girlfriend or lover la irukka nu keten.. adhu iku nanum reply pannen.. but na unta kekala.. but kethu irundha ni solli iruppiya enna nu kuda Enakku therila.. but ipo ta Enakku ni sonna.. ni love pandra nu la.. that's your privacy.. but idha thavara Balance elam share panni irukkom.. 🔐
+Enta ni oru nal namba game play pandra apo.. unakku girlfriend or lover la irukka nu keten.. adhu iku nanum reply pannen.. but na unta kekala.. but kethu irundha ni solli iruppiya enna nu kuda Enakku therila.. but ipo ta Enta ni sonna.. ni love pandra nu la.. that's your privacy.. but idha thavara Balance elam share panni irukkom.. 🔐
 
 Na unta frnd ahh mattum ta pesi irukken.. vera endha oru intention laiyum endha oru msg um na pannala oi.. Enakku therinchuu... Apdi edum irundha sollu oi.. apdi edum irundha sorry oi... 🙏
 
